@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact us - Dexterix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image\jpeg" href="favicon/D.jpeg">
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvEF88TUQE1XfTDginYNRWpU5YzDkGGrc&callback=initMap"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        function init_map() {
+            var var_location = new google.maps.LatLng(13.0325489, 77.5899031);
+
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 16,
+                styles: [{
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#212121"
+                    }]
+                }, {
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#757575"
+                    }]
+                }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#212121"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#757575"
+                    }]
+                }, {
+                    "featureType": "administrative.country",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#9e9e9e"
+                    }]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "administrative.locality",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#bdbdbd"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#757575"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#181818"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#616161"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1b1b1b"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#2c2c2c"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#8a8a8a"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#373737"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#3c3c3c"
+                    }]
+                }, {
+                    "featureType": "road.highway.controlled_access",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#4e4e4e"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#616161"
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#757575"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#3d3d3d"
+                    }]
+                }]
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Atria Institute of Technology"
+            });
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var_marker.setMap(var_map);
+
+        }
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+    <style>
+        body {
+            background-image: url(images/stars-about.png);
+            color: white;
+        }
+        
+        #for_bg {
+            background-image: url("image/me/bg.png");
+        }
+        
+        #map-container {
+            height: 300px;
+        }
+        /*Contact sectiom*/
+        
+        .content-header {
+            font-family: 'Oleo Script', cursive;
+            color: #fcc500;
+            font-size: 45px;
+        }
+        
+        .section-content {
+            text-align: center;
+        }
+        
+        #contact {
+            font-family: 'Teko', sans-serif;
+            padding-top: 60px;
+            width: 100%;
+            width: 100vw;
+            height: 550px;
+            color: #000000;
+        }
+        
+        .contact-section {
+            padding-top: 40px;
+        }
+        
+        .contact-section .col-md-6 {
+            width: 50%;
+        }
+        
+        .form-line {
+            border-right: 1px solid #B29999;
+        }
+        
+        .form-group {
+            margin-top: 10px;
+        }
+        
+        label {
+            font-size: 1.3em;
+            line-height: 1em;
+            color: white!important!;
+            font-weight: normal;
+        }
+        
+        .form-control {
+            font-size: 1.3em;
+            color: #080808;
+        }
+        
+        textarea.form-control {
+            height: 135px;
+            /* margin-top: px;*/
+        }
+        
+        .submit {
+            font-size: 1.1em;
+            float: right;
+            width: 150px;
+            background-color: transparent;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav style="opacity:50%!important;  font-weight: 250; color:white!important; font-family: 'Raleway', sans-serif; min-height:55px !important; font-size: 13.5px;  background:rgba(0,0,0,0.5); " class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">DEXTERIX'19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-2">
+                    <a style="color:white!important;" class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a style="color:white;" class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a style="color:white;" class="nav-link" href="Makeathon/makeathon.html">MAKEATHON</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a style="color:white;" class="nav-link" href="events.html">EVENTS</a>
+                </li>
+
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          SCHEDULE
+                        </a>
+                    <div class="dropdown-menu" style="background-color: black;" aria-labelledby="navbarDropdown">
+                        <a style="color:white; font-weight:300;  font-family: 'Raleway', sans-serif;" class="dropdown-item" href="day1.html">DAY 1</a>
+                        <a style="color:white; font-weight:300;   font-family: 'Raleway', sans-serif;" class="dropdown-item" href="day2.html">DAY 2</a>
+
+                </li>
+                <li class="nav-item px-2">
+                    <a style="color:white;" class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+                <!-- <li class="nav-item px-2">
+                            <a style="color:white;" class="nav-link" href="comingsoon.html">SPONSORS</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a style="color:white;" class="nav-link" href="dexterix2017.html">DEXTERIX 2017</a>
+                        </li> -->
+                <li class="nav-item px-2">
+                    <a style="color:white;" class="nav-link" href="contact-us.html">CONTACT US</a>
+                </li>
+            </ul>
+            </div>
+    </nav>
+    <?php include('navbar.html') ; ?>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <h2 style="text-align:center;">We are here</h2>
+        </div>
+    </div>
+    <div id="map-container" class="col-md-12"></div>
+    <!-- contact details -->
+    <div id="for_bg">
+        <div class="section-content">
+            <h1 class="section-header" style="font-size:20px;text-transform: none;">Contact us: support@dexterix.com<span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> </span></h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div style="margin-left: auto;
+                         margin-right: auto;
+                         text-align: center;">
+                        <p style="font-size:50%">
+                            <i class="fa fa-phone fa-5x mar-bot20"></i>
+                            <h4 class="text-bold"><b>Arya Gowda</b></h4>
+                            <p><br>Phone: +91 99023 66728</b>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="margin-left: auto;
+                         margin-right: auto;
+                         text-align: center;">
+                        <p style="font-size:50%">
+                            <i class="fa fa-phone fa-5x mar-bot20"></i>
+                            <h4 class="text-bold"><b>Hitayishi</b></h4>
+                            <p><br>Phone: +91 99860 28298</b>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="margin-left: auto;
+                             margin-right: auto;
+                             text-align: center;">
+                        <p style="font-size:50%">
+                            <i class="fa fa-phone fa-5x mar-bot20"></i>
+                            <h4 class="text-bold"><b>Niveditha</b></h4>
+                            <p><br>Phone: +91 99164 22848</b>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="margin-left: auto;
+                                 margin-right: auto;
+                                 text-align: center;">
+                        <p style="font-size:50%">
+                            <i class="fa fa-phone fa-5x mar-bot20"></i>
+                            <h4 class="text-bold"><b>Uday</b></h4>
+                            <p><br>Phone: +91 90669 23636</b>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="margin-left: auto;
+                         margin-right: auto;
+                         text-align: center;">
+                        <p style="font-size:50%">
+                            <i class="fa fa-phone fa-5x mar-bot20"></i>
+                            <h4 class="text-bold"><b>Venkateshwar</b></h4>
+                            <p><br> Phone: +91 76767 07583</b>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact form -->
+
+    </div>
+    <?php include('footer.html') ; ?>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        .footer-distributed {
+            background-color: black;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 55px 50px;
+            margin-top: 80px;
+        }
+        
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+        /* Footer left */
+        
+        .footer-distributed .footer-left {
+            width: 40%;
+        }
+        /* The company logo */
+        
+        .footer-distributed h3 {
+            color: #ffffff;
+            font: normal 36px 'Cookie', cursive;
+            margin: 0;
+        }
+        
+        .footer-distributed h3 span {
+            color: #5383d3;
+        }
+        /* Footer links */
+        
+        .footer-distributed .footer-links {
+            color: #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+        }
+        
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .footer-distributed .footer-company-name {
+            color: #424242;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+        /* Footer Center */
+        
+        .footer-distributed .footer-center {
+            width: 35%;
+        }
+        
+        .footer-distributed .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+        
+        .footer-distributed .footer-center i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+        }
+        
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            vertical-align: middle;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+            color: #ffffff;
+        }
+        
+        .footer-distributed .footer-center p a {
+            color: #5383d3;
+            text-decoration: none;
+            ;
+        }
+        /* Footer Right */
+        
+        .footer-distributed .footer-right {
+            width: 20%;
+        }
+        
+        .footer-distributed .footer-company-about {
+            line-height: 20px;
+            color: #3498db;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-company-about span {
+            display: block;
+            color: #424242;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .footer-distributed .footer-icons {
+            margin-top: 25px;
+        }
+        
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+        /* If you don't want the footer to be responsive, remove these media queries */
+        
+        @media (max-width: 880px) {
+            .footer-distributed {
+                font: bold 14px sans-serif;
+            }
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-center,
+            .footer-distributed .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .footer-distributed .footer-center i {
+                margin-left: 0;
+            }
+        }
+        
+        #address:hover {
+            font-weight: 1000;
+        }
+    </style>
+    <br>
+    <footer style=" font-family: 'Raleway', sans-serif;!important" id="foot" class="footer-distributed">
+        <div class="footer-left">
+            <h3 style=" font-family: 'Raleway', sans-serif;">Dexterix</h3>
+            <br>
+            <br>
+            <h5 style="color:#bdbdbd; font-size:17px;">Developed by: </h5>
+            <h5 style="color:#bdbdbd; font-size:17px;"> John Karamchand,Kim Vats,Nikhil Singh
+            </h5>
+            <h5 style="color:#bdbdbd; font-size:17px;">Department of Computer Science & Engineering</h5>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p style="font-family: 'Raleway', sans-serif;!important; font-size:14px;">
+                    <a id="address" style="color:white;" href="https://www.google.com/maps/place/Atria+Institute+of+Technology/@13.0325175,77.5899353,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17bd97727093:0x5135aab8250c1df5!8m2!3d13.0325489!4d77.5920918?hl=en-US">
+                        <span>Atria Institute of Technology</span> Adjacent Bangalore Baptist Hospital <br>Hebbal, Bengaluru - 560 024 </a>
+                </p>
+            </div>
+            <!-- <div>
+                <i class="fa fa-phone"></i>
+                <p style=" font-family: 'Raleway', sans-serif;!important">Uday: +91 90669 23636</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p style=" font-family: 'Raleway', sans-serif;!important">Arya: +91 99236 66728</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p style=" font-family: 'Raleway', sans-serif;!important">Hitayishi: +91 99860 28298</p>
+            </div> -->
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a style="font-family: 'Raleway', sans-serif;!important;color:#bdbdbd;" href="mailto:code.webteam@gmail.com">code.webteam@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about" style="font-family: 'Raleway', sans-serif;!important; color:#424242;">
+                <span>Atria Institute of Technology</span> Vision: To be a premier technical institution providing best in class learning solutions in developing competent professionals.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/code.ait/"><i class="fa fa-facebook"></i></a>
+                <a href=" https://twitter.com/DexteriX2k17?s=08"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/dexterix2k19?igshid=1dbz1fjyi6j7c"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
